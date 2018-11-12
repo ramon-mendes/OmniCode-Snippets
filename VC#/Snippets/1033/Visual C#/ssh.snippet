@@ -4,7 +4,7 @@
     <Header>
       <Title>ssh</Title>
       <Author>midiway</Author>
-	  <Shortcut>ssh</Shortcut>
+	    <Shortcut>ssh</Shortcut>
       <Description>Code snippet for an method call handler for the SciterEventHandler class</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,13 +12,13 @@
     </Header>
     <Snippet>
       <Declarations>
-        <Literal Editable="true">
+        <Literal>
           <ID>Name</ID>
           <ToolTip>Name</ToolTip>
           <Default>DoSomething</Default>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[public bool Host_$Name$(SciterElement el, SciterValue[] args, out SciterValue result)
+      <Code Language="csharp"><![CDATA[public bool Host_$Name$(SciterElement el, SciterValue[] args, out SciterValue result)
 {
 	result = null;$selected$$end$
 	return true;
