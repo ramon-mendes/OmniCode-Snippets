@@ -1,0 +1,39 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>msgprompt</Title>
+		<Author>midi</Author>
+		<Shortcut>msgprompt</Shortcut>
+		<Description>Code snippet for a view.msgbox() prompt</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>text</ID>
+				<ToolTip>Text</ToolTip>
+				<Default>Text:</Default>
+			</Literal>
+			<Literal>
+				<ID>title</ID>
+				<ToolTip>Title</ToolTip>
+				<Default>Title</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="TIScript"><![CDATA[var text;
+var res = view.msgbox(#question, "$text$" + "<br><input !text>", "$title$", [#ok, #cancel], function(el_root) {}, function(el_root, id) {
+	if(id==#ok)
+	{
+		text = el_root.$$(input).value.trim();
+		return text.length != 0;
+	}
+	return true;
+});
+
+if(res==#ok)
+{
+	$selected$// do something with user input$end$
+}]]></Code>
+	</Snippet>
+</CodeSnippet>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>get</Title>
+      <Author>midiway</Author>
+	  <Shortcut>get</Shortcut>
+      <Description>Code snippet for a GET</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Delimiter="$"><![CDATA[using(HttpClient hc = new HttpClient())
+{
+	var response = await hc.GetAsync("https://github.com/MISoftware/Chamfer.js/archive/master.zip");
+	var data = await response.Content.ReadAs$selected$$end$()
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

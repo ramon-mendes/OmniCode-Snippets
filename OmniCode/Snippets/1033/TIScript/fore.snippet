@@ -1,0 +1,29 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>fore</Title>
+    <Author>midi</Author>
+    <Shortcut>fore</Shortcut>
+    <Description>Code snippet for a foreach loop</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>what</ID>
+        <ToolTip>What</ToolTip>
+        <Default>what</Default>
+      </Literal>
+	  <Literal>
+        <ID>vars</ID>
+        <ToolTip>Vars</ToolTip>
+        <Default>(i,v)</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="TIScript"><![CDATA[for(var $vars$ in $what$) {
+$selected$$end$
+}]]></Code>
+  </Snippet>
+</CodeSnippet>

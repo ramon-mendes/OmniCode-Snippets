@@ -1,0 +1,31 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>font-face</Title>
+    <Author>midi</Author>
+    <Shortcut>@font-face</Shortcut>
+    <Description>Code snippet for an @font-face declaration</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>Name of the font</ToolTip>
+        <Default>'My Font'</Default>
+      </Literal>
+	  <Literal>
+        <ID>url</ID>
+        <ToolTip>Font file URL path</ToolTip>
+        <Default>myfont.ttf</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="OmniCSS"><![CDATA[@font-face
+{
+	font-family: $name$;
+	font-style: normal;
+	src: url($url$);
+}]]></Code>
+  </Snippet>
+</CodeSnippet>

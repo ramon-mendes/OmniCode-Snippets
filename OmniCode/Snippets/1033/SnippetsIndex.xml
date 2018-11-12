@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SnippetCollection>
+    <Language Lang="TIScript" Guid="{3DFE5652-317F-49AB-BECB-C1F29DD502BC}">
+        <SnippetDir>
+            <OnOff>On</OnOff>
+            <Installed>true</Installed>
+            <Locale>1033</Locale>
+            <DirPath>%InstallRoot%\OmniCode\Snippets\%LCID%\TIScript\</DirPath>
+            <LocalizedName>TIScript</LocalizedName>
+        </SnippetDir>
+    </Language>
+    <Language Lang="OmniCSS" Guid="{8331C92E-C7B5-4647-8A4F-C875B2966C83}">
+        <SnippetDir>
+            <OnOff>On</OnOff>
+            <Installed>true</Installed>
+            <Locale>1033</Locale>
+            <DirPath>%InstallRoot%\OmniCode\Snippets\%LCID%\OmniCSS\</DirPath>
+            <LocalizedName>OmniCSS</LocalizedName>
+        </SnippetDir>
+    </Language>
+</SnippetCollection>

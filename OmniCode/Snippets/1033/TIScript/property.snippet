@@ -1,0 +1,31 @@
+﻿<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>property</Title>
+    <Author>midi</Author>
+    <Shortcut>property</Shortcut>
+    <Description>Code snippet for a class property</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>Property variable name</ToolTip>
+        <Default>PropName</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="TIScript"><![CDATA[property $name$(val) {
+	get
+	{
+		return this._val;$selected$$end$
+	}
+	set
+	{
+		this._val = val;
+	}
+}]]></Code>
+  </Snippet>
+</CodeSnippet>
