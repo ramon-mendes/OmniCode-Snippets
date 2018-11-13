@@ -22,6 +22,13 @@ if %ERRORLEVEL% equ 0 (
 	xcopy /s /y %~dp0\VC# VC#\
 )
 
+cd /d "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional"
+if %ERRORLEVEL% equ 0 (
+	rmdir /s /q OmniCode
+	xcopy /s %~dp0\OmniCode OmniCode\
+	xcopy /s /y %~dp0\VC# VC#\
+)
+
 cd /d "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community"
 if %ERRORLEVEL% equ 0 (
 	rmdir /s /q OmniCode
