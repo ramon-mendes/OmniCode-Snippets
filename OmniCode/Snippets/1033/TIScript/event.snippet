@@ -3,7 +3,7 @@
     <Title>event</Title>
     <Author>midi</Author>
     <Shortcut>event</Shortcut>
-    <Description>Code snippet for a 'event' function</Description>
+    <Description>Code snippet for an 'event' function</Description>
     <SnippetTypes>
       <SnippetType>Expansion</SnippetType>
       <SnippetType>SurroundsWith</SnippetType>
@@ -16,8 +16,13 @@
         <ToolTip>Event name</ToolTip>
         <Default>eventname</Default>
       </Literal>
+	  <Literal>
+        <ID>selector</ID>
+        <ToolTip>CSS selector</ToolTip>
+        <Default>CSSselector</Default>
+      </Literal>
     </Declarations>
-    <Code Language="TIScript"><![CDATA[event $eventname$(evt) {
+    <Code Language="TIScript"><![CDATA[event $eventname$ $($selector$)(evt) {
 $selected$$end$
 }]]></Code>
   </Snippet>
